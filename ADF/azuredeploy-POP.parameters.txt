@@ -98,7 +98,10 @@
                   "direction": "Inbound",
                   "sourcePortRanges": [],
                   "destinationPortRanges": [],
-                  "sourceAddressPrefixes": ["52.112.0.0/14", "52.120.0.0/14"],
+                  "sourceAddressPrefixes": [
+                    "52.112.0.0/14",
+                    "52.120.0.0/14"
+                  ],
                   "destinationAddressPrefixes": []
                 }
               },
@@ -138,6 +141,13 @@
               }
             ]
           }
+          // {
+          //   "name": "AzureBastionSubnet",
+          //   "prefix": "96/27",
+          //   "NSG": 1,
+          //   "FlowLogEnabled": true,
+          //   "FlowAnalyticsEnabled": true
+          // }
         ],
         "BastionInfo": {
           "name": "HST01",
@@ -188,7 +198,9 @@
             "Name": "BotVmss01",
             "Sku": "Standard",
             "Type": "Public",
-            "BackEnd": ["BotVmss01"],
+            "BackEnd": [
+              "BotVmss01"
+            ],
             "FrontEnd": [
               {
                 "LBFEName": "BotVmss01",
@@ -247,9 +259,18 @@
             "DDRole": "64GBSS",
             "OSType": "Server2022",
             "LB": "BotVmss01",
-            "NATName": ["BotNotification", "MediaControlPlane"],
-            "zones": ["1", "2", "3"],
-            "LBBE": ["BotVmss01"],
+            "NATName": [
+              "BotNotification",
+              "MediaControlPlane"
+            ],
+            "zones": [
+              "1",
+              "2",
+              "3"
+            ],
+            "LBBE": [
+              "BotVmss01"
+            ],
             "NICs": [
               {
                 "Subnet": "FE01",
