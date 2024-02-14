@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "/subscriptions/037b1b36-59ef-4e4b-ab64-5cea63450432/resourceGroups/AEU1-POP-BOT-RG-D1/providers/Microsoft.Web/sites/mypopaibot",
+  "appService.deploySubpath": "."
+}

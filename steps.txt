@@ -52,3 +52,20 @@ https://teams.microsoft.com/l/meetup-join/19%3ayJrRlTiLBE0ByajJVurQd2mDTi7XTTynU
  VMSS Admin Password: MyPOPBot2024@
 
 CNAME for bot.mypop.ai aeu1-pop-bot-d1-kv.eastus.cloudapp.azure.com
+
+
+
+WARNING: Prefix [AEU1] Org [POP] App [BOT] Environment [D1]
+VERBOSE: Deploying to:
+
+Name         : Microsoft Azure Sponsorship (037b1b36-59ef-4e4b-ab64-5cea63450432) - e44afcaf-ee13-4e7b-b0fc-8914d754ecfe - info@mypop.ai
+Account      : info@mypop.ai
+Environment  : AzureCloud
+Subscription : 037b1b36-59ef-4e4b-ab64-5cea63450432
+Tenant       : e44afcaf-ee13-4e7b-b0fc-8914d754ecfe
+
+
+VERBOSE: Storage Account is: [aeu1popbotd1saglobal] and container is: [aeu1-bot-stageartifacts-haryormeedey]
+
+
+az deployment group create --name 'mypopbot' --resource-group 'AEU1-POP-BOT-RG-D1' --template-file 'ADF\main.bicep' --parameters 'ADF\azuredeploy-POP.parameters.json'

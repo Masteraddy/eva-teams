@@ -1,0 +1,5 @@
+{
+  "appService.preDeployTask": "publish-release",
+  "appService.deploySubpath": "EchoBot\\bin\\Release\\net6.0\\publish",
+  "appService.defaultWebAppToDeploy": "/subscriptions/037b1b36-59ef-4e4b-ab64-5cea63450432/resourceGroups/appsvc_windows_centralus_premium/providers/Microsoft.Web/sites/aeu1-pop-bot-d1-kv"
+}
