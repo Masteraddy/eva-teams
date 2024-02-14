@@ -34,10 +34,10 @@ jobs:
       - uses: actions/checkout@v2
 
       # Add wait on concurrent workflows executing via https://github.com/marketplace/actions/action-turnstyle
-      # - name: Turnstyle
-      #   uses: softprops/turnstyle@v1
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Turnstyle
+        uses: softprops/turnstyle@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v1
