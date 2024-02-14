@@ -36,6 +36,8 @@ jobs:
       # Add wait on concurrent workflows executing via https://github.com/marketplace/actions/action-turnstyle
       - name: Turnstyle
         uses: softprops/turnstyle@v1
+        with:
+          continue-after-seconds: 180
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
