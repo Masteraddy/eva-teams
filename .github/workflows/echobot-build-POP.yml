@@ -37,7 +37,7 @@ jobs:
       - name: Turnstyle
         uses: softprops/turnstyle@v1
         with:
-          continue-after-seconds: 180
+          continue-after-seconds: 380
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
